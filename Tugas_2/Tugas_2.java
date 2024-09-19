@@ -4,7 +4,7 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class SystemManagement {
+public class Tugas_2 {
     public static void main(String[] args) {
 
         Map<Integer, String> mhsDB = new HashMap<>();
