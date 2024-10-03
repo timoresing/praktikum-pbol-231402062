@@ -7,7 +7,7 @@ public class Game {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nama : ");
         String nama = scanner.nextLine();
-        scanner.nextLine();
+        // scanner.nextLine();
 
         System.out.println("Pilih class/job : ");
         System.out.println("1. Hero");
