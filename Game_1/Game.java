@@ -1,6 +1,6 @@
 package Game_1;
-import java.util.Scanner;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Game {
     public static void main(String[] args) {
