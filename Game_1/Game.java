@@ -42,9 +42,9 @@ public class Game {
         }
 
         if (player.getHP() <= 0) {
-            System.out.println("Player win!");
-        } else {
             System.out.println("Enemy win!");
+        } else {
+            System.out.println("Player win!");
         }
 
         scanner.close();
