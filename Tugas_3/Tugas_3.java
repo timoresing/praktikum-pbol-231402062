@@ -1,7 +1,6 @@
 package Tugas_3;
 
 import java.awt.*;
-import java.awt.event.*;
 import javax.swing.*;
 
 public class Tugas_3 {
@@ -15,7 +14,7 @@ public class Tugas_3 {
 
         // blank label
         JLabel blankLabel = new JLabel("");
-        
+
         // panel signup
         JPanel signUp = new JPanel();
         signUp.setLayout(new BorderLayout());
@@ -30,7 +29,7 @@ public class Tugas_3 {
         // content
         JPanel main = new JPanel();
         main.setLayout(new BoxLayout(main, BoxLayout.X_AXIS));
-        
+
         JPanel content = new JPanel();
         content.setLayout(new BoxLayout(content, BoxLayout.Y_AXIS));
         content.setAlignmentY(Component.CENTER_ALIGNMENT);
@@ -72,7 +71,7 @@ public class Tugas_3 {
         signup.setBackground(Color.decode("#026866"));
         signup.setForeground(Color.decode("#FFFFFF"));
         content.add(signup);
-        
+
         main.add(content);
         // footer
         JPanel footer = new JPanel();
@@ -86,12 +85,7 @@ public class Tugas_3 {
         JButton login2 = new JButton("Login");
         login2.setForeground(Color.decode("#FF0000"));
         footer.add(login2);
-        login2.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                card.show(frame.getContentPane(), "Login");
-            }
-        });
+        login2.addActionListener(e -> card.show(frame.getContentPane(), "Login"));
 
         // blank1
         JPanel blank1 = new JPanel();
@@ -121,7 +115,7 @@ public class Tugas_3 {
         // content
         JPanel main2 = new JPanel();
         main2.setLayout(new BoxLayout(main2, BoxLayout.X_AXIS));
-        
+
         JPanel content2 = new JPanel();
         content2.setLayout(new BoxLayout(content2, BoxLayout.Y_AXIS));
         content2.setAlignmentY(Component.CENTER_ALIGNMENT);
@@ -153,7 +147,7 @@ public class Tugas_3 {
         login.setBackground(Color.decode("#026866"));
         login.setForeground(Color.decode("#FFFFFF"));
         content2.add(login);
-        
+
         main2.add(content2);
         // footer
         JPanel footer2 = new JPanel();
@@ -167,12 +161,7 @@ public class Tugas_3 {
         JButton signup2 = new JButton("Sign Up");
         signup2.setForeground(Color.decode("#FF0000"));
         footer2.add(signup2);
-        signup2.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                card.show(frame.getContentPane(), "Sign Up");
-            }
-        });
+        signup2.addActionListener(e -> card.show(frame.getContentPane(), "Sign Up"));
 
         // blank3
         JPanel blank3 = new JPanel();
@@ -190,7 +179,7 @@ public class Tugas_3 {
 
         frame.add(signUp, "Sign Up");
         frame.add(Login, "Login");
-        
+
         frame.setVisible(true);
     }
 }
